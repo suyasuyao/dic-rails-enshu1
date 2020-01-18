@@ -21,4 +21,5 @@ ADD ./contacts_app/Gemfile.lock $APP_ROOT/Gemfile.lock
 # Gemfileのbundle install
 RUN gem install bundler:2.1.4
 RUN bundle install
-ADD ./contacts_app $APP_ROOT
+#ADD ./contacts_app $APP_ROOT
+#ADD ./docker/web/database.yml $APP_ROOT/config/database.yml
