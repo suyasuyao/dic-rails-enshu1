@@ -43,3 +43,6 @@ psql: error: could not connect to server: FATAL:  unsupported frontend protocol 
 
 postgres:12-alpineは起動したがpsqlで接続できないため、
 postgres:11-alpineを利用
+
+ docker-compose build --no-cache
+ docker-compose up
