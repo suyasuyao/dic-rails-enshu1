@@ -13,36 +13,13 @@ DICの演習１
 8. contentカラムでは、1文字以上140文字以下しか保存できないようにする
 9. contentカラムで140文字より多い文字数、または内容が空で登録した場合、エラーメッセージがでるようにする
 
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-$ docker-compose build # コンテナをビルド
-
-# -dオプションをつけてバックグラウンド実行するとこの後新しいシェルを立ち上げる必要がなくなる
-$ docker-compose up # コンテナの一斉起動
-
-ymbp13:rails_enshu yoo_ad$ psql -h localhost -U admin -p 5432
-psql: error: could not connect to server: FATAL:  unsupported frontend protocol 1234.5679: server supports 2.0 to 3.0
-
-postgres:12-alpineは起動したがpsqlで接続できないため、
-postgres:11-alpineを利用
-
+# docker利用方法
+```
  docker-compose build --no-cache
  docker-compose up
+```
+
+
+# 問題点
+- postgres:12-alpineは起動したがpsqlで接続できないため、postgres:11-alpineを利用
+
