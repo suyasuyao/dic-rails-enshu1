@@ -13,14 +13,21 @@ DICの演習１
 8. contentカラムでは、1文字以上140文字以下しか保存できないようにする
 9. contentカラムで140文字より多い文字数、または内容が空で登録した場合、エラーメッセージがでるようにする
 
-# docker
-## 利用方法
-```
- docker-compose build --no-cache
- docker-compose up
-```
 
+* Ruby version
 
-## 問題点
-- postgres:12-alpineは起動したがpsqlで接続できないため、postgres:11-alpineを利用
+* System dependencies
 
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
