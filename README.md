@@ -31,3 +31,15 @@ DICの演習１
 * Deployment instructions
 
 * ...
+
+
+$ docker-compose build # コンテナをビルド
+
+# -dオプションをつけてバックグラウンド実行するとこの後新しいシェルを立ち上げる必要がなくなる
+$ docker-compose up # コンテナの一斉起動
+
+ymbp13:rails_enshu yoo_ad$ psql -h localhost -U admin -p 5432
+psql: error: could not connect to server: FATAL:  unsupported frontend protocol 1234.5679: server supports 2.0 to 3.0
+
+postgres:12-alpineは起動したがpsqlで接続できないため、
+postgres:11-alpineを利用
