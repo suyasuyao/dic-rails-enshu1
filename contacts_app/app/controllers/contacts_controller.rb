@@ -8,6 +8,6 @@ class ContactsController < ApplicationController
                            email: params[:contact][:email],
                            content: params[:contact][:content])
     @contact.save
-    redirect_to new_contact_path
+    render "new"
   end
 end
