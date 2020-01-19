@@ -20,7 +20,7 @@ DICの演習１
  docker-compose build --no-cache
  docker-compose run web bin/rake db:create 
 # マイグレーションやデータ投入を行う際に 
- docker-compose run web db:migrate db:seed
+ docker-compose run web bin/rake db:migrate db:seed
 # アプリケーション起動時毎回実施
  docker-compose up
 ```

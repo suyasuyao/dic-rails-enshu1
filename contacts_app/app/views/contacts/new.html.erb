@@ -1,0 +1,20 @@
+<h1>Contacts#new</h1>
+<p>Find me in app/views/contacts/new.html.erb</p>
+<% @contact.errors.full_messages.each do |msg| %>
+<li><%= msg %></li>
+<% end %>
+<%= form_with(model: Contact.new, local: true  ) do |form| %>
+<div class="contact_name">
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+</div>
+<div class="contact_email">
+  <%= form.label :email %>
+  <%= form.text_field :email %>
+</div>
+<div class="contact_content">
+  <%= form.label :content %>
+  <%= form.text_field :content %>
+</div>
+<%= form.submit %>
+<% end %>
